@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap Knowledge Check</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="registration.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">My Website</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<h1>Registration Page</h1>
+
+		<div class="container mt-5">
+			<h2 class="text-center text-primary">Registration Form</h2>
+			<form class="border p-4 shadow-sm bg-light" action="submission.html">
+				<div class="row">
+					<div class="mb-3 col">
+						<label for="firstname" class="form-label">First Name</label>
+						<input
+							type="text"
+							class="form-control"
+							id="firstname"
+							placeholder="Enter your first name"
+						/>
+					</div>
+					<div class="mb-3 col">
+						<label for="lastname" class="form-label">Last Name</label>
+						<input
+							type="text"
+							class="form-control"
+							id="lastname"
+							placeholder="Enter your last name"
+						/>
+					</div>
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email address</label>
+					<input
+						type="email"
+						class="form-control"
+						id="email"
+						placeholder="Enter your email"
+						required
+					/>
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label">Password</label>
+					<input
+						type="password"
+						class="form-control"
+						id="password"
+						placeholder="Enter your password"
+						required
+					/>
+				</div>
+				<p class="d-inline-flex gap-1">
+					Do you agree to our terms:
+					<button type="button" class="btn active" data-bs-toggle="button">
+						Yes
+					</button>
+					<button type="button" class="btn" data-bs-toggle="button">No</button>
+				</p>
+				<button type="submit" class="btn btn-success w-100">Submit</button>
+			</form>
+		</div>
+
+		<table class="table text-center table-responsive table-striped table-hover">
+			<thead>
+				<tr>
+					<th scope="col">First</th>
+					<th scope="col">Last</th>
+					<th scope="col">Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Sora</td>
+					<td>Otto</td>
+					<td>sora@keyblade.com</td>
+				</tr>
+				<tr>
+					<td>Roxas</td>
+					<td>Nobody</td>
+					<td>dream@drop.com</td>
+				</tr>
+				<tr>
+					<td>Riku</td>
+					<td>Heartless</td>
+					<td>riku@xeanort.com</td>
+				</tr>
+				<tr>
+					<td>Micky</td>
+					<td>Mouse</td>
+					<td>kingdom@key.com</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="text-center rounded rounded-circle">
+			<img
+				style="img-fluid rounded rounded-circle img-fluid text-center"
+				src="https://wallpaperaccess.com/full/324993.jpg"
+			/>
+		</div>
+
+		<div>
+			<img
+				class="rounded-circle"
+				src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/06/kingdom-hearts-birth-by-sleep-best-character-play-order.jpg"
+			/>
+		</div>
+
+		<button src="btn btn-success d-block mx-auto">Centered Button</button>
+
+		<div class="d-none d-lg-block">
+			<button src="d-none d-xl-block">Hidden on smaller screens</button>
+		</div>
+
+		<br />
+		<br />
+		<br />
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
